@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { BackgroundGradientAnimation } from "./GradientBg";
 
 export const BentoGrid = ({
   className,
@@ -50,9 +51,9 @@ export const BentoGridItem = ({
       )}
     >
       {/* images */}
-      <div className={`${id === 6 && "flex justify-center"} h-[200px]`}>
+      <div className={`${id === 6 && "flex justify-center"} h-full`}>
         {/* main image */}
-        <div className="w-full h-full">
+        <div className="w-full h-full absolute">
           {image && (
             <img
               src={image}
@@ -76,21 +77,24 @@ export const BentoGridItem = ({
             />
           )}
         </div>
-        {/* {id === 6 && (
+        {id === 6 && (
           // add background animation , remove the p tag
           <BackgroundGradientAnimation>
             <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
           </BackgroundGradientAnimation>
-        )} */}
-      </div>
-      {/* {header} */}
-      <div className="group-hover/bento:translate-x-2 transition duration-200">
-        {/* {icon} */}
-        <div className="font-sans font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2 p-3">
-          {title}
-        </div>
-        <div className="font-sans font-normal text-neutral-600 text-xs dark:text-neutral-300 p-3">
-          {description}
+        )}
+        <div
+          className={cn(
+            titleClassName,
+            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
+          )}
+        >
+          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
+            {description}
+          </div>
+          <div className="font-sans font-bold text-neutral-600 dark:text-neutral-200 text-lg lg:text-3xl max-w-96 z-10">
+            {title}
+          </div>
         </div>
       </div>
     </div>
