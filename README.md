@@ -4,6 +4,7 @@
 ## Technologieis/Dependencies
 
 - Aceternity UI
+- threeJS
 
 ## yes
 
