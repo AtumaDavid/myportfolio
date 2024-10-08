@@ -10,7 +10,7 @@ import { FaHome } from "react-icons/fa";
 export default function Home() {
   return (
     <main className="relative bg-blue-300 flex justify-center items-center flex-col mx-auto sm:px-10  border border-red-600 overflow-clip">
-      <div className="max-w-7xl w-full border-red-600 border">
+      <div className="max-w-7xl w-full ">
         <FloatingNav className="" navItems={navItems} />
         <Hero />
         <Grid />
