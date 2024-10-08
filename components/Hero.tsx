@@ -49,7 +49,7 @@ export default function Hero() {
                 transition={{ duration: 0.5, ease: "easeInOut" }}
               >
                 <a href="#about">
-                  <MagicButton title="Show My Work" />
+                  <MagicButton title="Show My Work" position={""} />
                 </a>
               </motion.div>
             )}

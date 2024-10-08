@@ -29,9 +29,9 @@ export default function Footer() {
         </p>
         <a href="mailto:contact@jsmastery.pro">
           <MagicButton
-            title="Let's get in touch"
+            title="Send an Email, Let's get in touch"
             icon={<FaLocationArrow />}
-            // position="right"
+            position="right"
           />
         </a>
       </div>

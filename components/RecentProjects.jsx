@@ -1,6 +1,7 @@
 import { projects } from "@/data";
 import React from "react";
 import { PinContainer } from "./ui/3Dcontainer";
+import Link from "next/link";
 
 export default function RecentProjects() {
   return (
@@ -16,12 +17,17 @@ export default function RecentProjects() {
             className="lg:min-h-[32.5rem] h-[25rem] flex justify-center sm:w-96 w-[80vw]"
           >
             {/* {title} */}
-            <PinContainer title={link} href={link}>
+            {/* <PinContainer title={link} href={link}> */}
+            <Link
+              href={link}
+              title={link}
+              className="hover:bg-blue-200 rounded-lg p-3 border border-blue-100"
+            >
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-blue-200">
                   <img src="/bg.png" alt="bg-img" />
                 </div>
-                <img src={img} alt={title} className="z-10 absolute bottom-0" />
+                <img src={img} alt={title} className="z-10 absolute" />
               </div>
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
                 {title}
@@ -41,7 +47,9 @@ export default function RecentProjects() {
                   ))}
                 </div>
               </div>
-            </PinContainer>
+            </Link>
+
+            {/* </PinContainer> */}
           </div>
         ))}
       </div>

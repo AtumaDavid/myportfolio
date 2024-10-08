@@ -2,13 +2,15 @@ import React from "react";
 
 export default function MagicButton({
   title,
-  handleClick,
   icon,
+  position,
+  handleClick,
   otherClasses,
 }: {
   title: string;
   handleClick?: () => void;
   icon?: React.ReactNode;
+  position: string;
   otherClasses?: string;
 }) {
   return (
