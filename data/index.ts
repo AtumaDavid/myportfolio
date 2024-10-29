@@ -73,11 +73,11 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "Pizza Joint",
+    title: "E-Commerce app(Wix CMS)",
     des: "A unique food ordering website ",
-    img: "/pizzajoint.png",
-    iconLists: ["/re.svg", "/tail.svg", "/javascript.svg"],
-    link: "https://pizza-joint-framer-motion-three.vercel.app/",
+    img: "/e-commerce-wix.png",
+    iconLists: ["/tail.svg", "/ts.svg", "/next.svg"],
+    link: "https://ecommerce-next-wixcms.vercel.app/",
   },
   {
     id: 2,
