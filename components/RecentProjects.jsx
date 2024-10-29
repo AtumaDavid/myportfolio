@@ -40,7 +40,7 @@ export default function RecentProjects() {
                   {iconLists.map((icon) => (
                     <div
                       key={icon}
-                      className="border border-white/[0.2] rounded-full bg-blue-300 lg:w-10 lg:h-10 w-8 h-8 flex items-center justify-center"
+                      className="border border-white/[0.2] rounded-full bg-blue-200 lg:w-10 lg:h-10 w-8 h-8 flex items-center justify-center "
                     >
                       <img src={icon} alt={icon} className="p-2" />
                     </div>
