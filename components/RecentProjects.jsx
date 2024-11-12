@@ -1,6 +1,6 @@
 import { projects } from "@/data";
 import React from "react";
-import { PinContainer } from "./ui/3Dcontainer";
+// import { PinContainer } from "./ui/3Dcontainer";
 import Link from "next/link";
 
 export default function RecentProjects() {

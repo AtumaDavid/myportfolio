@@ -74,7 +74,7 @@ export const projects = [
   {
     id: 1,
     title: "E-Commerce app(Wix CMS)",
-    des: "A unique food ordering website ",
+    des: "An E-Commerce Website that uses Wix CMS for the Backend and NextJs for the frontend",
     img: "/e-commerce-wix.png",
     iconLists: ["/tail.svg", "/ts.svg", "/next.svg"],
     link: "https://ecommerce-next-wixcms.vercel.app/",
